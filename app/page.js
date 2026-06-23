@@ -165,10 +165,10 @@ export default function HomePage() {
                 <span className="pc-name">Capsicum Yellow</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
-              <a className="product-image-card pcard product-link-eggplants" style={{ '--bg': '#fff6a7', '--fg': '#0d2b00' }} href="/product-detail?p=eggplants" aria-label="View eggplants">
-                <img className="pc-fruit" src="/assets/products/eggplants-cut.png" alt="Eggplants" />
+              <a className="product-image-card pcard product-link-eggplants" style={{ '--bg': '#fff6a7', '--fg': '#0d2b00' }} href="/product-detail?p=eggplant-long" aria-label="View Eggplant Long">
+                <img className="pc-fruit" src="/assets/products/eggplants-cut.png" alt="Eggplant Long" />
                 <span className="pc-cat">Vegetable</span>
-                <span className="pc-name">Eggplants</span>
+                <span className="pc-name">Eggplant Long</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
             </section>
@@ -287,12 +287,12 @@ export default function HomePage() {
                             <animate attributeName="stroke-opacity" values="0.95;0" dur="5s" begin="-3.75s" repeatCount="indefinite" />
                           </circle>
                         </g>
-                        <g stroke="rgba(231,235,170,0.6)" strokeWidth="2">
+                        <g className="diagram-annot" stroke="rgba(231,235,170,0.6)" strokeWidth="2">
                           <line x1="320" y1="490" x2="688" y2="490" />
                           <line x1="320" y1="482" x2="320" y2="498" />
                           <line x1="688" y1="482" x2="688" y2="498" />
                         </g>
-                        <text x="705" y="501" fill="#e8e8b0" fontFamily="Fustat, Arial, sans-serif" fontSize="34">Regrowth Cycle</text>
+                        <text className="diagram-annot" x="705" y="501" fill="#e8e8b0" fontFamily="Fustat, Arial, sans-serif" fontSize="34">Regrowth Cycle</text>
                         <image href="/assets/standards-tomato.png" x="205" y="590" width="230" height="161" />
                       </svg>
                     </div>
@@ -386,7 +386,7 @@ export default function HomePage() {
               <a href="/what-we-do">What we do</a>
               <a href="/products">Products</a>
               <a href="/calendar">Calendar</a>
-              <a href="/contact">Contact</a>
+              <a href="/range">Our Range</a><a href="/contact">Contact</a>
             </nav>
           </main>
       <SiteFooter />

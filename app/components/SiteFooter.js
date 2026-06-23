@@ -42,6 +42,7 @@ export default function SiteFooter() {
         <a href="/products">Products</a>
         <a href="/what-we-do">What we do</a>
         <a href="/calendar">Product Calendar</a>
+        <a href="/range">Our Range</a>
       </div>
 
       <div className="sf-info">
