@@ -4752,22 +4752,32 @@ body {
   .cal-stage > .cal2026 .mo { font-size: 15px; }
 
   /* product cards: name + 12-month colour strip */
-  .m-calcards { display: block; padding: 4px 16px 28px; }
-  .m-cal-months { display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; padding: 0 12px 8px; position: sticky; top: 0; background: #0a1d01; z-index: 5; }
-  .m-cal-months span { text-align: center; color: rgba(255,255,255,.6); font-size: 10px; font-family: "Geologica", sans-serif; }
-  .m-cal-card { display: block; background: #13340a; border-radius: 12px; padding: 12px 12px 14px; margin-bottom: 10px; text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
-  .m-cal-name { display: inline-block; color: #fff; font-family: "Fustat", sans-serif; font-weight: 600; font-size: 16px; margin-bottom: 9px; text-decoration: none; }
-  .m-cal-strip { display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; }
-  .m-cal-cell { height: 26px; border-radius: 5px; cursor: pointer; }
-  /* tap a card (or any colored box) to reveal what each color/month means */
-  .m-cal-detail { max-height: 0; overflow: hidden; opacity: 0; transition: max-height .35s ease, opacity .25s ease, margin-top .3s ease; }
-  .m-cal-card.is-open .m-cal-detail { max-height: 320px; opacity: 1; margin-top: 12px; }
-  .m-cal-legrow { display: flex; align-items: center; gap: 9px; padding: 7px 6px; border-radius: 8px; }
-  .m-cal-legrow + .m-cal-legrow { margin-top: 2px; }
-  .m-cal-legrow.is-hl { background: rgba(255, 255, 255, .08); }
-  .m-cal-sw { flex: none; width: 14px; height: 14px; border-radius: 4px; }
-  .m-cal-leglabel { flex: none; color: #fff; font-family: "Fustat", sans-serif; font-weight: 600; font-size: 13px; }
-  .m-cal-legmonths { margin-left: auto; text-align: right; color: rgba(255, 255, 255, .6); font-family: "Geologica", sans-serif; font-size: 11px; line-height: 1.3; }
+  /* exact desktop grid on mobile — swipe sideways through the 12 month columns;
+     the product-name column stays pinned on the left. */
+  .m-calcards { display: block; padding: 4px 12px 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .m-cal-grid { min-width: max-content; }
+  .m-cal-ghead, .m-cal-gline { display: grid; grid-template-columns: 122px repeat(12, 46px); align-items: center; }
+  .m-cal-ghead { margin: 0 0 8px; }
+  .m-cal-gcorner { position: sticky; left: 0; z-index: 3; align-self: stretch; background: #0a1d01; }
+  .m-cal-ghcell { text-align: center; color: rgba(255, 255, 255, .6); font-family: "Geologica", sans-serif; font-size: 11px; }
+  .m-cal-grow { background: #13340a; border-radius: 12px; margin-bottom: 8px; padding: 12px 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .m-cal-gname { position: sticky; left: 0; z-index: 2; padding: 0 12px; background: #13340a; color: #fff; font-family: "Fustat", sans-serif; font-weight: 600; font-size: 14px; line-height: 1.15; text-decoration: none; }
+  .m-cal-gdot { width: 30px; height: 30px; border-radius: 50%; justify-self: center; cursor: pointer; }
+  /* tap a card (or any colored box) to expand it inline — like desktop: product
+     photo + View product button, then each month labeled with its status. */
+  .m-cal-detail { position: sticky; left: 0; width: calc(100vw - 24px); box-sizing: border-box; max-height: 0; overflow: hidden; opacity: 0; transition: max-height .4s ease, opacity .25s ease, margin-top .3s ease; }
+  .m-cal-grow.is-open .m-cal-detail { max-height: 760px; opacity: 1; margin-top: 12px; padding: 0 12px; }
+  .m-cal-feat { display: flex; align-items: center; gap: 12px; padding-bottom: 12px; margin-bottom: 6px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+  .m-cal-thumb { flex: none; width: 60px; height: 60px; border-radius: 10px; overflow: hidden; background: #0a1d01; }
+  .m-cal-thumb img { width: 100%; height: 100%; object-fit: contain; }
+  .m-cal-featname { color: #fff; font-family: "Fustat", sans-serif; font-weight: 700; font-size: 17px; }
+  .m-cal-viewbtn { margin-left: auto; flex: none; background: #c0f400; color: #0d2b00; font-family: "Fustat", sans-serif; font-weight: 600; font-size: 13px; text-decoration: none; padding: 10px 16px; border-radius: 999px; white-space: nowrap; }
+  .m-cal-monthlist { display: grid; grid-template-columns: 1fr; gap: 1px; }
+  .m-cal-mrow { display: flex; align-items: center; gap: 10px; padding: 7px 6px; border-radius: 8px; }
+  .m-cal-mrow.is-hl { background: rgba(255, 255, 255, .1); }
+  .m-cal-mmon { flex: none; width: 34px; color: rgba(255, 255, 255, .6); font-family: "Geologica", sans-serif; font-size: 12px; }
+  .m-cal-msw { flex: none; width: 14px; height: 14px; border-radius: 4px; }
+  .m-cal-mlabel { color: #fff; font-family: "Fustat", sans-serif; font-weight: 500; font-size: 13px; }
 
   /* "four-color system" + legend + note  (cream band) */
   .m-cal-legend { background: #fffad3; padding: 36px 20px; display: flex; flex-direction: column; }
@@ -4981,14 +4991,12 @@ body {
   .wwd-hero-fig > .wHero-divider { width: calc(100% - 44px); margin: 0 22px; }
   .wwd-hero-fig > .wHeroP { font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.82); padding: 16px 22px 0; }
 
-  /* steps: keep the pinned cross-fade stage on mobile too (legacyScript runs the
-     choreography on phones now). The desktop pinned rules (.wwd-stack.is-xfade
-     .wwd-stack-pin / .wwd-panel) apply as-is; we only reflow each panel's CONTENT
-     into a readable mobile card (title → photo → tag → copy → pill) below. */
-  .wwd-stack { display: block; }
-  /* no-JS / reduced-motion fallback only: stack the 4 panels statically */
-  .wwd-stack:not(.is-xfade) .wwd-panel { position: relative; opacity: 1; transform: none; }
-  .wwd-panel { aspect-ratio: auto !important; width: 100% !important; height: auto !important; margin: 0; display: block; padding: 26px 22px 16px; background: #143f00; box-sizing: border-box; }
+  /* steps: un-pin the cross-fade stack and let the 4 panels stack vertically
+     (smooth static cards on mobile — no scroll-driven choreography) */
+  .wwd-stack:not(.wwd-mscroll), .wwd-stack:not(.wwd-mscroll) .wwd-stack-pin,
+  .wwd-stack:not(.wwd-mscroll).is-xfade .wwd-stack-pin { position: static !important; height: auto !important; min-height: 0 !important; display: block !important; overflow: visible !important; }
+  .wwd-stack:not(.wwd-mscroll).is-xfade .wwd-panel, .wwd-stack:not(.wwd-mscroll) .wwd-panel { position: relative !important; opacity: 1 !important; transform: none !important; }
+  .wwd-panel { aspect-ratio: auto !important; width: 100% !important; height: auto !important; margin: 0; display: block; padding: 34px 22px 18px; background: #143f00; box-sizing: border-box; }
   .wwd-panel .el { position: static; left: auto; top: auto; width: auto; height: auto; margin: 0; white-space: normal; }
   .wwd-panel .wTitle--white { font-size: 40px; line-height: 1; color: #fff; margin-bottom: 16px; }
   .wwd-panel .wTitle--lime { display: none; }
@@ -5012,19 +5020,35 @@ body {
   .wwd-grow-fig .wTeam img { width: 100%; height: 100%; object-fit: cover; }
   .wwd-grow-fig .wProcessPill { width: auto; height: auto; padding: 13px 24px; margin-top: 18px; }
   .wwd-grow-fig .wOurProcess { font-size: 15px; }
+
+  /* mobile: pinned step-through like the homepage Standards section. Smooth —
+     JS animates opacity + a small slide only (no per-frame z-index churn, which
+     caused the earlier lag). Added by JS via .wwd-mscroll; without JS the static
+     stacked cards above remain. */
+  .wwd-stack.wwd-mscroll { position: relative !important; }
+  .wwd-stack.wwd-mscroll .wwd-stack-pin { position: sticky !important; top: 0; height: 100svh !important; overflow: hidden !important; }
+  .wwd-stack.wwd-mscroll .wwd-panel {
+    position: absolute !important; inset: 0 !important; width: 100% !important; height: 100svh !important;
+    margin: 0 !important; padding: 0 22px !important;
+    display: flex; flex-direction: column; justify-content: center;
+    opacity: 0; will-change: transform, opacity; backface-visibility: hidden;
+  }
+  .wwd-stack.wwd-mscroll .wwd-panel + .wwd-panel { border-top: 0 !important; }
+  .wwd-mscroll-dots { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 11px; z-index: 6; }
+  .wwd-mscroll-dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255, 246, 167, .3); transition: background-color .3s ease, transform .3s ease; }
+  .wwd-mscroll-dots span.is-active { background: #fff6a7; transform: scale(1.35); }
 }
 
 /* Guarantee no horizontal scroll on any device/zoom (sticky-safe: clip ≠ scroll container) */
 html, body { overflow-x: clip; max-width: 100%; }
 
 @media (max-width: 760px) {
-  /* What We Do — polish the 4 process steps for mobile (footer + grow untouched).
-     The cross-fade panels overlap (absolute), so the divider only makes sense in
-     the static no-JS fallback. Content is centered within the pinned viewport. */
-  .wwd-stack:not(.is-xfade) .wwd-stack-pin .wwd-panel + .wwd-panel { border-top: 1px solid rgba(165, 210, 0, 0.20); }
-  .wwd-panel .wTitle--white { margin-bottom: 16px; }
-  .wwd-panel .wwd-photo { height: 208px; margin-bottom: 16px; }
-  .wwd-panel .wPara { margin-bottom: 16px; }
+  /* What We Do — polish the 4 process steps for mobile (footer + grow untouched) */
+  .wwd-stack-pin .wwd-panel + .wwd-panel { border-top: 1px solid rgba(165, 210, 0, 0.20); }
+  .wwd-panel { padding: 40px 22px 30px; }
+  .wwd-panel .wTitle--white { margin-bottom: 18px; }
+  .wwd-panel .wwd-photo { height: 232px; margin-bottom: 18px; }
+  .wwd-panel .wPara { margin-bottom: 18px; }
 }
 
 @media (max-width: 760px) {
