@@ -3930,7 +3930,9 @@ body {
 .pd-foot .btnC2:active { transform: translateY(calc(-1*var(--u))); }
 @media (max-width:760px){
   .pd-split{ flex-direction:column; }
-  .pd-left{ position:static; width:100%; height:auto; aspect-ratio:963/979; }
+  /* full-width panel: height tracks the card content (979 figma px at full-width --u),
+     not the original 963-wide aspect, so there's no empty green below the store pills */
+  .pd-left{ position:static; width:100%; height:calc(979*var(--u)); aspect-ratio:auto; }
   .pd-right{ width:100%; }
 }
 
