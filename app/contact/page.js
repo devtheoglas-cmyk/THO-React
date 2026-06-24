@@ -101,7 +101,7 @@ export default function ContactPage() {
               <a href="/what-we-do">What we do</a>
               <a href="/products">Products</a>
               <a href="/calendar">Calendar</a>
-              <a href="/contact">Contact</a>
+              <a href="/range">Our Range</a><a href="/contact">Contact</a>
             </nav>
           </main>
       <SiteFooter />
