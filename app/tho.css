@@ -1740,6 +1740,11 @@ body {
   overflow: visible;
 }
 
+/* Desktop: the wrapper around the About hand + heart is transparent to layout,
+   so the children keep positioning absolutely on the stage. Mobile overrides it
+   to a relative box that overlays the heart on the hand (see the ≤760px block). */
+.about-hand-wrap { display: contents; }
+
 .heart-reveal-stroke {
   /* stroke-dasharray / -dashoffset are set inline by script.js using the
      path's real length; the transition drives the draw-in once revealed. */
@@ -4759,22 +4764,24 @@ body {
   .cal-stage > .cal2026 { font-size: 26px; color: #fff6a7; padding: 8px 20px 4px; }
   .cal-stage > .cal2026 .mo { font-size: 15px; }
 
-  /* product cards: name + 12-month colour strip */
-  /* exact desktop grid on mobile — swipe sideways through the 12 month columns;
-     the product-name column stays pinned on the left. */
-  .m-calcards { display: block; padding: 4px 12px 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .m-cal-grid { min-width: max-content; }
-  .m-cal-ghead, .m-cal-gline { display: grid; grid-template-columns: 122px repeat(12, 46px); align-items: center; }
-  .m-cal-ghead { margin: 0 0 8px; }
-  .m-cal-gcorner { position: sticky; left: 0; z-index: 3; align-self: stretch; background: #0a1d01; }
-  .m-cal-ghcell { text-align: center; color: rgba(255, 255, 255, .6); font-family: "Geologica", sans-serif; font-size: 11px; }
-  .m-cal-grow { background: #13340a; border-radius: 12px; margin-bottom: 8px; padding: 12px 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
-  .m-cal-gname { position: sticky; left: 0; z-index: 2; padding: 0 12px; background: #13340a; color: #fff; font-family: "Fustat", sans-serif; font-weight: 600; font-size: 14px; line-height: 1.15; text-decoration: none; }
-  .m-cal-gdot { width: 30px; height: 30px; border-radius: 50%; justify-self: center; cursor: pointer; }
-  /* tap a card (or any colored box) to expand it inline — like desktop: product
-     photo + View product button, then each month labeled with its status. */
-  .m-cal-detail { position: sticky; left: 0; width: calc(100vw - 24px); box-sizing: border-box; max-height: 0; overflow: hidden; opacity: 0; transition: max-height .4s ease, opacity .25s ease, margin-top .3s ease; }
-  .m-cal-grow.is-open .m-cal-detail { max-height: 760px; opacity: 1; margin-top: 12px; padding: 0 12px; }
+  /* product cards: name on top + a full-width 12-month availability timeline.
+     No horizontal scroll — the 12 months span the card as coloured segments. */
+  .m-calcards { display: block; padding: 0 0 30px; }
+  .m-cal-grid {}
+  /* sticky month-initials header; its 12 columns line up with the bars below */
+  .m-cal-ghead { position: sticky; top: 0; z-index: 20; display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; background: #0a1d01; padding: 12px 28px 10px; box-shadow: 0 8px 14px -8px rgba(0, 0, 0, .55); }
+  .m-cal-gcorner { display: none; }
+  .m-cal-ghcell { text-align: center; color: rgba(255, 255, 255, .55); font-family: "Geologica", sans-serif; font-size: 11px; letter-spacing: .02em; }
+  .m-cal-grow { background: #13340a; border-radius: 14px; margin: 0 12px 10px; padding: 15px 16px; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background .2s ease; }
+  .m-cal-grow.is-open { background: #18420c; }
+  .m-cal-gline { display: grid; grid-template-columns: repeat(12, 1fr); gap: 4px; }
+  .m-cal-gname { grid-column: 1 / -1; color: #fff; font-family: "Fustat", sans-serif; font-weight: 600; font-size: 15px; line-height: 1.2; text-decoration: none; margin-bottom: 12px; }
+  .m-cal-gdot { width: 100%; height: 22px; border-radius: 5px; cursor: pointer; transition: transform .15s ease; }
+  .m-cal-gdot:active { transform: scaleY(1.18); }
+  /* tap a card (or any month segment) to expand inline — product photo +
+     View product button, then each month labeled with its status. */
+  .m-cal-detail { width: 100%; box-sizing: border-box; max-height: 0; overflow: hidden; opacity: 0; transition: max-height .4s ease, opacity .25s ease, margin-top .3s ease; }
+  .m-cal-grow.is-open .m-cal-detail { max-height: 900px; opacity: 1; margin-top: 14px; }
   .m-cal-feat { display: flex; align-items: center; gap: 12px; padding-bottom: 12px; margin-bottom: 6px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
   .m-cal-thumb { flex: none; width: 60px; height: 60px; border-radius: 10px; overflow: hidden; background: #0a1d01; }
   .m-cal-thumb img { width: 100%; height: 100%; object-fit: contain; }
@@ -4786,6 +4793,24 @@ body {
   .m-cal-mmon { flex: none; width: 34px; color: rgba(255, 255, 255, .6); font-family: "Geologica", sans-serif; font-size: 12px; }
   .m-cal-msw { flex: none; width: 14px; height: 14px; border-radius: 4px; }
   .m-cal-mlabel { color: #fff; font-family: "Fustat", sans-serif; font-weight: 500; font-size: 13px; }
+
+  /* View More / View Less paging for the long product list */
+  .m-cal-more {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: calc(100% - 24px); margin: 6px 12px 4px; box-sizing: border-box;
+    padding: 14px; border: none; border-radius: 999px;
+    background: #fff6a7; color: #0d2b00;
+    font-family: "Fustat", sans-serif; font-weight: 600; font-size: 15px;
+    cursor: pointer; -webkit-tap-highlight-color: transparent;
+  }
+  .m-cal-more:active { filter: brightness(.94); }
+  .m-cal-more-c { opacity: .55; font-weight: 500; }
+  .m-cal-grow.m-cal-reveal { animation: mCalReveal .4s ease both; }
+  @keyframes mCalReveal {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) { .m-cal-grow.m-cal-reveal { animation: none; } }
 
   /* "four-color system" + legend + note  (cream band) */
   .m-cal-legend { background: #fffad3; padding: 36px 20px; display: flex; flex-direction: column; }
@@ -4900,8 +4925,12 @@ body {
   .about-stage > .btn-explore { align-self: center; width: auto; height: auto; padding: 14px 28px; margin: 8px 0 30px; border-radius: 999px; }
   .about-stage > .btn-explore .tBtnE { position: static; width: auto; font-size: 16px; }
 
-  /* trust: hand image + heading + text */
-  .about-stage > img[src*="fig-hand"] { width: 210px; height: auto; align-self: center; }
+  /* trust: hand image with the heart outline overlaid (matches Figma) + heading + text.
+     The wrapper becomes a relative box; the hand flows normally and the heart is
+     absolutely positioned over it (heart spans the hand canvas width at y≈44%). */
+  .about-stage .about-hand-wrap { display: block; position: relative; width: 220px; margin: 10px auto 0; }
+  .about-stage .about-hand-wrap > img[src*="fig-hand"] { position: static; width: 100%; height: auto; display: block; z-index: 2; }
+  .about-stage .about-hand-wrap > .heart-draw { display: block; position: absolute; left: 50%; top: 43.7%; width: 100%; height: 40%; transform: translateX(-50%); z-index: 1; }
   .about-stage > .tTrustH { font-size: 30px; line-height: 1.05; color: #2d5335; text-align: center; padding: 8px 24px 6px; }
   .about-stage > .tTrustP { font-size: 15px; line-height: 1.55; color: #103200; text-align: center; padding: 0 24px 38px; }
 
