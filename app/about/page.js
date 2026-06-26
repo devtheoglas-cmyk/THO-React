@@ -61,10 +61,12 @@ export default function AboutPage() {
             </a>
       
             
+            <div className="about-hand-wrap">
             <img className="el box" src="/assets/about/fig-hand-clean.png?v=4" alt="A hand gently holding an ivy leaf, encircled by a heart-shaped line" style={{ '--x': '194', '--y': '2089', '--w': '676', '--h': '1144', zIndex: '3' }} />
             <svg className="heart-draw" data-heart-draw style={{ '--x': '194', '--y': '2589', '--w': '676.212', '--h': '457.603' }} viewBox="0 0 676.212 457.603" fill="none" preserveAspectRatio="none" aria-hidden="true">
               <path className="heart-reveal-stroke" fill="none" stroke="#A5D200" strokeWidth="2.59226" strokeLinecap="round" d="M340.049 1.2959C384.477 1.29591 419.219 17.7881 440.097 46.498C460.987 75.2252 468.155 116.404 456.963 166.071L459.406 166.896C476.663 129.197 509.87 101.451 549.49 99.0898H549.525L549.537 99.0889C605.026 98.0954 641.908 117.988 660.542 151.194C679.223 184.484 679.768 231.502 661.749 285.133C623.5 399.036 487.894 456.307 348.814 456.307C210.303 456.307 69.334 399.487 18.9492 286.359L18.3604 285.026C-4.27172 233.272 -3.73436 186.295 16.0811 152.574C35.8714 118.896 75.0919 98.1023 130.585 99.0879C170.215 101.44 203.432 129.19 220.691 166.896L223.135 166.071C211.942 116.404 219.111 75.2252 240.001 46.498C260.879 17.7881 295.62 1.2959 340.049 1.2959Z" />
             </svg>
+            </div>
             <h2 className="el tTrustH" style={{ '--x': '995', '--y': '2513', '--w': '760' }}>Trust What We Grow</h2>
             <p className="el tTrustP" style={{ '--x': '995', '--y': '2629', '--w': '801' }}>At The House of Organic, we are committed to delivering produce that meets expectations by maintaining consistent quality and careful handling, guided by our values of reliability, sustainability, and integrity</p>
       
