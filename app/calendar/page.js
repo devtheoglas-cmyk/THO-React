@@ -9,7 +9,7 @@ export default function CalendarPage() {
             
             <div className="el box m-secbg" style={{ '--x': '0', '--y': '979', '--w': '1920', '--h': '1794', background: '#0a1d01' }}></div>
             <div className="el box m-secbg" style={{ '--x': '0', '--y': '2773', '--w': '1920', '--h': '1064', background: '#fffad3' }}></div>
-            <div className="el box m-secbg" style={{ '--x': '0', '--y': '4858', '--w': '1920', '--h': '366', background: '#143f00' }}></div>
+            <div className="el box m-secbg" style={{ '--x': '0', '--y': '3837', '--w': '1920', '--h': '1387', background: '#143f00' }}></div>
       
             
             <img className="el box m-hero" src="/assets/calendar/hero.jpg" alt="Organic produce" style={{ '--x': '0', '--y': '0', '--w': '1920', '--h': '979' }} />
@@ -67,15 +67,14 @@ export default function CalendarPage() {
             <p className="el calNote" style={{ '--x': '118', '--y': '3646', '--w': '527' }}>A note on nature. All local production is subject to favorable weather and environmental conditions. Harvests may run early or late by &plusmn;2 weeks.</p>
             </div>
 
-            <div className="m-calsec m-cal-plan">
-            <img className="el box m-planbg" src="/assets/calendar/plan-bg.jpg" alt="" style={{ '--x': '0', '--y': '3837', '--w': '1920', '--h': '1021' }} aria-hidden="true" />
-            <h2 className="el calPlanH" style={{ '--x': '429', '--y': '4145', '--w': '1062' }}>Plan Every Season with <span className="cream">The House of Organic</span></h2>
-            <p className="el calPlanBody" style={{ '--x': '506', '--y': '4363', '--w': '909' }}>Whether <span className="med">planning menus, retail shelves, or seasonal supply</span>, we help balance UAE-grown harvests with dependable global sourcing throughout the year.</p>
-            <a className="el box calBtn calBtn--explore" href="/products" style={{ '--x': '711', '--y': '4487', '--w': '261', '--h': '64.7' }}>Explore Products <span aria-hidden="true">&rarr;</span></a>
-            <a className="el box calBtn calBtn--contact" href="/contact" style={{ '--x': '996', '--y': '4486', '--w': '214', '--h': '65' }}>Contact <span aria-hidden="true">&rarr;</span></a>
-            </div>
-
             <div className="fig-foot">
+            <div className="el box foot-hand-card" style={{ '--x': '424', '--y': '4272', '--w': '474', '--h': '547' }}>
+              <img src="/assets/about/fig-footer-card.png" alt="The House of Organic — a hand holding an ivy leaf" />
+            </div>
+            <h2 className="el tCtaH" style={{ '--x': '1091', '--y': '4432', '--w': '404' }}>Want to know<br />more?</h2>
+            <a className="el box btn-contact" href="/contact" style={{ '--x': '1199', '--y': '4601', '--w': '189', '--h': '56.096' }}>
+              <span className="el tBtnC" style={{ '--x': '28.48', '--y': '17.26', '--w': '131' }}>Contact us <span aria-hidden="true">&rarr;</span></span>
+            </a>
             <div className="el box footer-divider" style={{ '--x': '42.5', '--y': '4904', '--w': '1834.5', '--h': '1' }}></div>
             <a className="el tFoot foot-link" href="/" style={{ '--x': '41', '--y': '4954.5', '--w': '160' }}>Homepage</a>
             <a className="el tFoot foot-link" href="/about" style={{ '--x': '41', '--y': '4989.7', '--w': '160' }}>About</a>
