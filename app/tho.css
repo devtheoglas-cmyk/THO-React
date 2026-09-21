@@ -1747,8 +1747,13 @@ body {
 
 .heart-reveal-stroke {
   /* stroke-dasharray / -dashoffset are set inline by script.js using the
-     path's real length; the transition drives the draw-in once revealed. */
-  transition: stroke-dashoffset 2.4s ease-in-out;
+     path's real length; the transition drives the draw-in once revealed.
+     Both sides of the heart draw down from the top dip to the point at once
+     (see the mirror clone in script.js), easing out like a confident pen
+     stroke settling into place. */
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 @media (prefers-reduced-motion: reduce) {
