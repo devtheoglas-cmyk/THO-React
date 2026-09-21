@@ -122,7 +122,7 @@ export default function RangePage() {
 
           <div className="rg-prodgrid">
             {filtered.map((p) => (
-              <a className="rg-prod" key={p.slug} href={`/product-detail?p=${p.slug}`}>
+              <div className="rg-prod" key={p.slug}>
                 <div className="rg-prod-top">
                   <h3>{p.name}</h3>
                   <span className={`rg-pill ${p.type === "Local" ? "is-local" : "is-import"}`}>{p.type}</span>
@@ -135,7 +135,7 @@ export default function RangePage() {
                   <span>{p.taste}</span>
                   <span>{p.availability}</span>
                 </p>
-              </a>
+              </div>
             ))}
             {filtered.length === 0 && <p className="rg-empty">No products match those filters.</p>}
           </div>

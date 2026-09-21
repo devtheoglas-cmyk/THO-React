@@ -123,49 +123,49 @@ export default function HomePage() {
                 our featured organic selection for fresh and reliable supply
               </h2>
               <a className="home-products-cta" href="/products">Explore Products</a>
-              <a className="product-image-card pcard product-link-cucumber" style={{ '--bg': '#143f00', '--fg': '#fff' }} href="/product-detail?p=cucumber" aria-label="View cucumber">
+              <a className="product-image-card pcard product-link-cucumber" style={{ '--bg': '#143f00', '--fg': '#fff' }} aria-label="View cucumber">
                 <img className="pc-fruit" src="/assets/products/cucumber-cut.png" alt="Cucumber" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Cucumber</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
-              <a className="product-image-card pcard product-link-broccoli" style={{ '--bg': '#2d5335', '--fg': '#fff' }} href="/product-detail?p=broccoli" aria-label="View broccoli">
+              <a className="product-image-card pcard product-link-broccoli" style={{ '--bg': '#2d5335', '--fg': '#fff' }} aria-label="View broccoli">
                 <img className="pc-fruit" src="/assets/products/broccoli-cut.png" alt="Broccoli" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Broccoli</span>
                 <span className="pc-seasons"><i>Spring</i><i>Winter</i></span>
               </a>
-              <a className="product-image-card pcard product-link-lemon" style={{ '--bg': '#c4e802', '--fg': '#0d2b00' }} href="/product-detail?p=lemon" aria-label="View lemon">
+              <a className="product-image-card pcard product-link-lemon" style={{ '--bg': '#c4e802', '--fg': '#0d2b00' }} aria-label="View lemon">
                 <img className="pc-fruit" src="/assets/products/citrus-cut.png" alt="Lemon" />
                 <span className="pc-cat">Citrus</span>
                 <span className="pc-name">Lemon</span>
                 <span className="pc-seasons"><i>Summer</i><i>Winter</i></span>
               </a>
-              <a className="product-image-card pcard product-link-tomato-cherry" style={{ '--bg': '#cd003c', '--fg': '#fff' }} href="/product-detail?p=tomato-cherry-red" aria-label="View tomato cherry red">
+              <a className="product-image-card pcard product-link-tomato-cherry" style={{ '--bg': '#cd003c', '--fg': '#fff' }} aria-label="View tomato cherry red">
                 <img className="pc-fruit" src="/assets/products/tomato-cherry-red-cut.png" alt="Tomato Cherry Red" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Tomato Cherry Red</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
-              <a className="product-image-card pcard product-link-mangoes" style={{ '--bg': '#fb6b1e', '--fg': '#fff' }} href="/product-detail?p=mangoes" aria-label="View mangoes">
+              <a className="product-image-card pcard product-link-mangoes" style={{ '--bg': '#fb6b1e', '--fg': '#fff' }} aria-label="View mangoes">
                 <img className="pc-fruit" src="/assets/products/mangoes-cut.png" alt="Mangoes" />
                 <span className="pc-cat">Seasonal Fruits</span>
                 <span className="pc-name">Mangoes</span>
                 <span className="pc-seasons"><i>Summer</i><i>Spring</i></span>
               </a>
-              <a className="product-image-card pcard product-link-capsicum-red" style={{ '--bg': '#fb6b1e', '--fg': '#fff' }} href="/product-detail?p=capsicum-red" aria-label="View capsicum red">
+              <a className="product-image-card pcard product-link-capsicum-red" style={{ '--bg': '#fb6b1e', '--fg': '#fff' }} aria-label="View capsicum red">
                 <img className="pc-fruit" src="/assets/products/capsicum-red-cut.png" alt="Capsicum Red" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Capsicum Red</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
-              <a className="product-image-card pcard product-link-capsicum-yellow" style={{ '--bg': '#c4e802', '--fg': '#0d2b00' }} href="/product-detail?p=capsicum-yellow" aria-label="View capsicum yellow">
+              <a className="product-image-card pcard product-link-capsicum-yellow" style={{ '--bg': '#c4e802', '--fg': '#0d2b00' }} aria-label="View capsicum yellow">
                 <img className="pc-fruit" src="/assets/products/capsicum-yellow-cut.png" alt="Capsicum Yellow" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Capsicum Yellow</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
-              <a className="product-image-card pcard product-link-eggplants" style={{ '--bg': '#fff6a7', '--fg': '#0d2b00' }} href="/product-detail?p=eggplant-long" aria-label="View Eggplant Long">
+              <a className="product-image-card pcard product-link-eggplants" style={{ '--bg': '#fff6a7', '--fg': '#0d2b00' }} aria-label="View Eggplant Long">
                 <img className="pc-fruit" src="/assets/products/eggplants-cut.png" alt="Eggplant Long" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Eggplant Long</span>
