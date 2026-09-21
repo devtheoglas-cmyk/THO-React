@@ -10,7 +10,7 @@ export default function WhatWeDoPage() {
             <section className="fig-stage wwd-hero-fig" aria-label="Intro">
               <img className="el box" src="/assets/whatwedo/hero.jpg" alt="Aerial view of a tractor working a green field" style={{ '--x': '0', '--y': '-1', '--w': '1920', '--h': '980' }} />
               <button className="el tHdr hdr-menu" type="button" data-menu style={{ '--x': '41', '--y': '63.28', '--w': '120' }} aria-label="Open menu">Menu <span className="hdr-plus" aria-hidden="true"></span></button>
-              <a className="el hdr-logo box" href="/" style={{ '--x': '879', '--y': '20', '--w': '161', '--h': '109' }} aria-label="The House of Organic — home"><img src="/assets/home-logo.png" alt="The House of Organic" /></a>
+              <a className="el hdr-logo box" href="/" style={{ '--x': '879', '--y': '20', '--w': '161', '--h': '109' }} aria-label="The House of Organic — home"><img loading="lazy" decoding="async" src="/assets/home-logo.png" alt="The House of Organic" /></a>
               <a className="el tHdr hdr-inquire" href="/contact" style={{ '--x': '1778', '--y': '66', '--w': '101' }}>INQUIRE</a>
               <p className="el wHero" style={{ '--x': '41', '--y': '277', '--w': '980' }}>We’re here to rethink how organic products are produced and how supply can be trusted.</p>
               <div className="el box wHero-divider" style={{ '--x': '41', '--y': '546', '--w': '1837', '--h': '1' }}></div>
@@ -24,7 +24,7 @@ export default function WhatWeDoPage() {
               <section className="fig-stage wwd-panel" id="farming" aria-label="Farming">
                 <p className="el wTitle wTitle--white" style={{ '--x': '481', '--y': '100', '--w': '1400' }}>farming</p>
                 <div className="el box wwd-photo" style={{ '--x': '90', '--y': '250', '--w': '1740', '--h': '710' }}>
-                  <img src="/assets/whatwedo/farming.jpg" alt="A young sprout growing from dark soil" />
+                  <img loading="lazy" decoding="async" src="/assets/whatwedo/farming.jpg" alt="A young sprout growing from dark soil" />
                   <p className="el wTitle wTitle--lime" style={{ '--x': '391', '--y': '-150', '--w': '1400' }}>farming</p>
                 </div>
                 <div className="el box wTagPill" style={{ '--x': '206', '--y': '612', '--w': '156', '--h': '35' }}></div>
@@ -37,7 +37,7 @@ export default function WhatWeDoPage() {
               <section className="fig-stage wwd-panel" aria-label="Sourcing">
                 <p className="el wTitle wTitle--white" style={{ '--x': '461', '--y': '100', '--w': '1400' }}>Sourcing</p>
                 <div className="el box wwd-photo" style={{ '--x': '90', '--y': '250', '--w': '1740', '--h': '710' }}>
-                  <img src="/assets/whatwedo/sourcing.jpg" alt="Overhead view of a worker harvesting greens" />
+                  <img loading="lazy" decoding="async" src="/assets/whatwedo/sourcing.jpg" alt="Overhead view of a worker harvesting greens" />
                   <p className="el wTitle wTitle--lime" style={{ '--x': '371', '--y': '-150', '--w': '1400' }}>Sourcing</p>
                 </div>
                 <div className="el box wTagPill" style={{ '--x': '206', '--y': '583', '--w': '156', '--h': '35' }}></div>
@@ -50,7 +50,7 @@ export default function WhatWeDoPage() {
               <section className="fig-stage wwd-panel" aria-label="Packaging">
                 <p className="el wTitle wTitle--white" style={{ '--x': '380', '--y': '100', '--w': '1400' }}>Packaging</p>
                 <div className="el box wwd-photo" style={{ '--x': '90', '--y': '250', '--w': '1740', '--h': '710' }}>
-                  <img src="/assets/whatwedo/packaging.jpg" alt="Hands in gloves planting a seedling" />
+                  <img loading="lazy" decoding="async" src="/assets/whatwedo/packaging.jpg" alt="Hands in gloves planting a seedling" />
                   <p className="el wTitle wTitle--lime" style={{ '--x': '290', '--y': '-150', '--w': '1400' }}>Packaging</p>
                 </div>
                 <div className="el box wTagPill" style={{ '--x': '204', '--y': '612', '--w': '156', '--h': '35' }}></div>
@@ -63,7 +63,7 @@ export default function WhatWeDoPage() {
               <section className="fig-stage wwd-panel" aria-label="Distribution">
                 <p className="el wTitle wTitle--white" style={{ '--x': '288', '--y': '100', '--w': '1500' }}>Distribution</p>
                 <div className="el box wwd-photo" style={{ '--x': '90', '--y': '250', '--w': '1740', '--h': '710' }}>
-                  <img src="/assets/whatwedo/distribution.jpg" alt="A worker arranging crates of produce at market" />
+                  <img loading="lazy" decoding="async" src="/assets/whatwedo/distribution.jpg" alt="A worker arranging crates of produce at market" />
                   <p className="el wTitle wTitle--lime" style={{ '--x': '198', '--y': '-150', '--w': '1500' }}>Distribution</p>
                 </div>
                 <div className="el box wTagPill" style={{ '--x': '204', '--y': '612', '--w': '166', '--h': '35' }}></div>
@@ -81,7 +81,7 @@ export default function WhatWeDoPage() {
               <svg className="el wGrowHeart box heart-draw" data-heart-draw style={{ '--x': '485', '--y': '378', '--w': '948.702', '--h': '642' }} viewBox="0 0 948.702 642" fill="none" preserveAspectRatio="none" aria-hidden="true">
                 <path className="heart-reveal-stroke" d="M477.076 1C539.617 1 588.628 24.2234 618.102 64.7539C647.585 105.298 657.64 163.33 641.901 233.173L643.786 233.809C668.097 180.698 714.935 141.515 770.916 138.2H770.966C849.025 136.802 901.1 164.799 927.431 211.72C953.591 258.338 954.493 323.901 929.775 398.527L929.187 400.292C875.355 560.6 684.624 641 489.374 641C294.144 641 95.1633 560.604 25.0098 400.21C-6.81111 327.443 -6.11775 261.245 21.8555 213.642C49.808 166.073 105.155 136.811 183.228 138.199C239.213 141.51 286.054 180.696 310.366 233.809L312.251 233.173C296.512 163.33 306.567 105.298 336.051 64.7539C365.524 24.2233 414.536 1.00005 477.076 1Z" stroke="#a5d200" strokeWidth="2.4" />
               </svg>
-              <div className="el box wTeam" style={{ '--x': '610', '--y': '333', '--w': '700', '--h': '700' }}><img src="/assets/whatwedo/team.jpg" alt="The House of Organic team" /></div>
+              <div className="el box wTeam" style={{ '--x': '610', '--y': '333', '--w': '700', '--h': '700' }}><img loading="lazy" decoding="async" src="/assets/whatwedo/team.jpg" alt="The House of Organic team" /></div>
               <a className="el box wProcessPill" href="#farming" style={{ '--x': '825', '--y': '857', '--w': '228', '--h': '65' }}><span className="wOurProcess">Our Process <span className="wop-arrow" aria-hidden="true">→</span></span></a>
       
               
@@ -89,7 +89,7 @@ export default function WhatWeDoPage() {
       
               
               <div className="el box foot-hand-card" style={{ '--x': '423', '--y': '1247', '--w': '474', '--h': '547' }}>
-                <img src="/assets/about/fig-footer-card.png" alt="The House of Organic — a hand holding an ivy leaf" />
+                <img loading="lazy" decoding="async" src="/assets/about/fig-footer-card.png" alt="The House of Organic — a hand holding an ivy leaf" />
               </div>
               <h2 className="el tCtaH" style={{ '--x': '1090', '--y': '1407', '--w': '404' }}>Want to know<br />more?</h2>
               <a className="el box btn-contact" href="/contact" style={{ '--x': '1198', '--y': '1576', '--w': '189', '--h': '56.096' }}>

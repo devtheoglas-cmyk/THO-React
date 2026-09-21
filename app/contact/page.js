@@ -16,7 +16,7 @@ export default function ContactPage() {
               <span className="c-hero-tint" aria-hidden="true"></span>
             </div>
             <button className="el tHdr hdr-menu" type="button" data-menu style={{ '--x': '41', '--y': '63', '--w': '120' }} aria-label="Open menu">Menu <span className="hdr-plus" aria-hidden="true"></span></button>
-            <a className="el hdr-logo box" href="/" style={{ '--x': '879', '--y': '20', '--w': '161', '--h': '109' }} aria-label="The House of Organic — home"><img src="/assets/home-logo.png" alt="The House of Organic" /></a>
+            <a className="el hdr-logo box" href="/" style={{ '--x': '879', '--y': '20', '--w': '161', '--h': '109' }} aria-label="The House of Organic — home"><img loading="lazy" decoding="async" src="/assets/home-logo.png" alt="The House of Organic" /></a>
             <a className="el tHdr hdr-inquire" href="#top" style={{ '--x': '1778', '--y': '66', '--w': '101' }}>INQUIRE</a>
       
             <h1 className="el cHeading" style={{ '--x': '41', '--y': '267', '--w': '900' }}>Contact us</h1>
@@ -41,13 +41,13 @@ export default function ContactPage() {
             
             <h2 className="el cFarmH" style={{ '--x': '40', '--y': '1077', '--w': '487' }}>Our Farming Base in Abu Dhabi</h2>
             <p className="el cBody" style={{ '--x': '40', '--y': '1230', '--w': '587' }}>We’re currently operating from Abu Dhabi, supporting UAE-grown organic produce through local farming and regional supply networks.</p>
-            <img className="el box c-map" src="/assets/contact/map.png" alt="World map highlighting Abu Dhabi, UAE" style={{ '--x': '40', '--y': '1398', '--w': '859', '--h': '422' }} />
+            <img loading="lazy" decoding="async" className="el box c-map" src="/assets/contact/map.png" alt="World map highlighting Abu Dhabi, UAE" style={{ '--x': '40', '--y': '1398', '--w': '859', '--h': '422' }} />
             <a className="el box c-findloc" href="https://maps.google.com/?q=Hamarain%20Center%20Dubai" target="_blank" rel="noopener" style={{ '--x': '43', '--y': '1768', '--w': '191', '--h': '37' }}>
               <span className="cFindLoc">Find Location</span>
             </a>
       
             
-            <img className="el box c-lettuce" src="/assets/contact/lettuce.jpg" alt="Fresh lettuce leaves" style={{ '--x': '968', '--y': '979', '--w': '952', '--h': '857' }} />
+            <img loading="lazy" decoding="async" className="el box c-lettuce" src="/assets/contact/lettuce.jpg" alt="Fresh lettuce leaves" style={{ '--x': '968', '--y': '979', '--w': '952', '--h': '857' }} />
             <p className="el cBePart" style={{ '--x': '1016', '--y': '1548', '--w': '593' }}>Be part of The House of Organic’s 2026 seasonal farming and supply updates.</p>
       
             <div className="el box c-card" style={{ '--x': '1635', '--y': '1025', '--w': '244', '--h': '243' }}></div>

@@ -13,14 +13,14 @@ export default function AboutPage() {
       
             
             <div className="el box hero-img" style={{ '--x': '0', '--y': '-41', '--w': '1920', '--h': '1020' }}>
-              <img src="/assets/about/fig-hero.png" alt="Two farmers inspecting freshly picked strawberries in a field" />
+              <img src="/assets/about/fig-hero.jpg" alt="Two farmers inspecting freshly picked strawberries in a field" />
               <span className="hero-tint" aria-hidden="true"></span>
             </div>
             <button className="el tHdr hdr-menu" type="button" data-menu style={{ '--x': '41', '--y': '63.28', '--w': '120' }} aria-label="Open menu">
               Menu <span className="hdr-plus" aria-hidden="true"></span>
             </button>
             <a className="el hdr-logo box" href="/" style={{ '--x': '879', '--y': '20', '--w': '161', '--h': '109' }} aria-label="The House of Organic — home">
-              <img src="/assets/home-logo.png" alt="The House of Organic" />
+              <img loading="lazy" decoding="async" src="/assets/home-logo.png" alt="The House of Organic" />
             </a>
             <a className="el tHdr hdr-inquire" href="/contact" style={{ '--x': '1778', '--y': '66', '--w': '101' }}>INQUIRE</a>
             <h1 className="el tHero" style={{ '--x': '328', '--y': '713.5', '--w': '1265' }}>We make it easier to source <br />locally grown UAE farm produce with <br /><span>consistent quality</span> <span className="lt">and reliable supply</span></h1>
@@ -36,24 +36,24 @@ export default function AboutPage() {
             
             <div className="el box ab-marquee" style={{ '--x': '0', '--y': '1690', '--w': '1920', '--h': '501.36' }} aria-hidden="true">
               <div className="ab-mq-track">
-                <img src="/assets/about-card-0.png" alt="" />
-                <img src="/assets/about-card-1.png" alt="" />
-                <img src="/assets/about-card-2.png" alt="" />
-                <img src="/assets/about-card-3.png" alt="" />
-                <img src="/assets/about-card-4.png" alt="" />
-                <img src="/assets/about-card-5.png" alt="" />
-                <img src="/assets/about-card-0.png" alt="" />
-                <img src="/assets/about-card-1.png" alt="" />
-                <img src="/assets/about-card-2.png" alt="" />
-                <img src="/assets/about-card-3.png" alt="" />
-                <img src="/assets/about-card-4.png" alt="" />
-                <img src="/assets/about-card-5.png" alt="" />
-                <img src="/assets/about-card-0.png" alt="" />
-                <img src="/assets/about-card-1.png" alt="" />
-                <img src="/assets/about-card-2.png" alt="" />
-                <img src="/assets/about-card-3.png" alt="" />
-                <img src="/assets/about-card-4.png" alt="" />
-                <img src="/assets/about-card-5.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-0.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-1.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-2.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-3.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-4.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-5.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-0.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-1.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-2.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-3.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-4.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-5.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-0.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-1.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-2.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-3.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-4.png" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/about-card-5.png" alt="" />
               </div>
             </div>
             <a className="el box btn-explore" href="/products" style={{ '--x': '828', '--y': '2240', '--w': '263', '--h': '61.247' }}>
@@ -62,7 +62,7 @@ export default function AboutPage() {
       
             
             <div className="about-hand-wrap">
-            <img className="el box" src="/assets/about/fig-hand-clean.png?v=4" alt="A hand gently holding an ivy leaf, encircled by a heart-shaped line" style={{ '--x': '194', '--y': '2089', '--w': '676', '--h': '1144', zIndex: '3' }} />
+            <img loading="lazy" decoding="async" className="el box" src="/assets/about/fig-hand-clean.png?v=4" alt="A hand gently holding an ivy leaf, encircled by a heart-shaped line" style={{ '--x': '194', '--y': '2089', '--w': '676', '--h': '1144', zIndex: '3' }} />
             <svg className="heart-draw" data-heart-draw style={{ '--x': '194', '--y': '2589', '--w': '676.212', '--h': '457.603' }} viewBox="0 0 676.212 457.603" fill="none" preserveAspectRatio="none" aria-hidden="true">
               <path className="heart-reveal-stroke" fill="none" stroke="#A5D200" strokeWidth="2.59226" strokeLinecap="round" d="M340.049 1.2959C384.477 1.29591 419.219 17.7881 440.097 46.498C460.987 75.2252 468.155 116.404 456.963 166.071L459.406 166.896C476.663 129.197 509.87 101.451 549.49 99.0898H549.525L549.537 99.0889C605.026 98.0954 641.908 117.988 660.542 151.194C679.223 184.484 679.768 231.502 661.749 285.133C623.5 399.036 487.894 456.307 348.814 456.307C210.303 456.307 69.334 399.487 18.9492 286.359L18.3604 285.026C-4.27172 233.272 -3.73436 186.295 16.0811 152.574C35.8714 118.896 75.0919 98.1023 130.585 99.0879C170.215 101.44 203.432 129.19 220.691 166.896L223.135 166.071C211.942 116.404 219.111 75.2252 240.001 46.498C260.879 17.7881 295.62 1.2959 340.049 1.2959Z" />
             </svg>
@@ -72,17 +72,17 @@ export default function AboutPage() {
       
             
             <div className="m-team">
-            <img className="el box team-bg" src="/assets/about/fig-team-bg.png" alt="" style={{ '--x': '0', '--y': '3233', '--w': '1920', '--h': '1046' }} />
+            <img loading="lazy" decoding="async" className="el box team-bg" src="/assets/about/fig-team-bg.png" alt="" style={{ '--x': '0', '--y': '3233', '--w': '1920', '--h': '1046' }} />
             <h2 className="el tTeamH" style={{ '--x': '769', '--y': '3570', '--w': '382' }}>OUR TEAM</h2>
             <p className="el tTeamP" style={{ '--x': '211', '--y': '3701', '--w': '1497' }}>With over 40 years in the fruits and vegetables trade, our team understands what matters most: freshness, consistency, and dependable service</p>
             </div>
       
             
             <div className="team-grid-hidden" style={{ display: 'none' }}>
-            <div className="el box team-card" style={{ '--x': '41', '--y': '4520', '--w': '553.27', '--h': '643.51' }}><img src="/assets/about/team-1.png" alt="Pauline Parisot" /></div>
-            <div className="el box team-card" style={{ '--x': '630.73', '--y': '4520', '--w': '553.27', '--h': '643.51' }}><img src="/assets/about/team-2.png" alt="Pauline Parisot" /></div>
-            <div className="el box team-card" style={{ '--x': '732.84', '--y': '5299', '--w': '553.27', '--h': '643.51' }}><img src="/assets/about/team-3.png" alt="Pauline Parisot" /></div>
-            <div className="el box team-card" style={{ '--x': '1325', '--y': '5299', '--w': '553.27', '--h': '643.51' }}><img src="/assets/about/team-4.png" alt="Pauline Parisot" /></div>
+            <div className="el box team-card" style={{ '--x': '41', '--y': '4520', '--w': '553.27', '--h': '643.51' }}><img loading="lazy" decoding="async" src="/assets/about/team-1.png" alt="Pauline Parisot" /></div>
+            <div className="el box team-card" style={{ '--x': '630.73', '--y': '4520', '--w': '553.27', '--h': '643.51' }}><img loading="lazy" decoding="async" src="/assets/about/team-2.png" alt="Pauline Parisot" /></div>
+            <div className="el box team-card" style={{ '--x': '732.84', '--y': '5299', '--w': '553.27', '--h': '643.51' }}><img loading="lazy" decoding="async" src="/assets/about/team-3.png" alt="Pauline Parisot" /></div>
+            <div className="el box team-card" style={{ '--x': '1325', '--y': '5299', '--w': '553.27', '--h': '643.51' }}><img loading="lazy" decoding="async" src="/assets/about/team-4.png" alt="Pauline Parisot" /></div>
             <p className="el tName" style={{ '--x': '41', '--y': '5196', '--w': '200' }}>Pauline parisot</p>
             <p className="el tRole" style={{ '--x': '41', '--y': '5230.6', '--w': '200' }}>Head of Brand</p>
             <p className="el tName" style={{ '--x': '631', '--y': '5196', '--w': '200' }}>Pauline parisot</p>
@@ -108,12 +108,12 @@ export default function AboutPage() {
             <span className="el tTag" style={{ '--x': '229', '--y': '5021', '--w': '200', color: '#c4e802' }}>PRODUCTION</span>
             <h3 className="el tCardT" style={{ '--x': '215', '--y': '5195', '--w': '594', color: '#000' }}>A Local Organic Story with Regional Relevance</h3>
             <p className="el tCardB" style={{ '--x': '215', '--y': '5462', '--w': '669', color: '#000' }}>We are not only suppliers of produce, we are growers. Our roots in local farming give us greater control over quality, planning, and product integrity.</p>
-            <img className="el box bento-photo" src="/assets/about/val-strawberry.jpg" alt="Hands harvesting strawberries into a white bowl" style={{ '--x': '967', '--y': '4949', '--w': '805', '--h': '704' }} />
+            <img loading="lazy" decoding="async" className="el box bento-photo" src="/assets/about/val-strawberry.jpg" alt="Hands harvesting strawberries into a white bowl" style={{ '--x': '967', '--y': '4949', '--w': '805', '--h': '704' }} />
             </div>
       
             
             <div className="m-val m-val-red">
-            <img className="el box bento-photo" src="/assets/about/val-crate.jpg" alt="A worker carrying a wooden crate full of fresh vegetables" style={{ '--x': '147', '--y': '5668', '--w': '805', '--h': '704' }} />
+            <img loading="lazy" decoding="async" className="el box bento-photo" src="/assets/about/val-crate.jpg" alt="A worker carrying a wooden crate full of fresh vegetables" style={{ '--x': '147', '--y': '5668', '--w': '805', '--h': '704' }} />
             <div className="el box bento-card" style={{ '--x': '967', '--y': '5668', '--w': '805', '--h': '704', background: '#ec4013' }}></div>
             <span className="el box tag" style={{ '--x': '1035', '--y': '5735', '--w': '105', '--h': '38' }}></span>
             <span className="el tTag" style={{ '--x': '1049', '--y': '5740', '--w': '200', color: '#fff' }}>DELIVER</span>
@@ -128,12 +128,12 @@ export default function AboutPage() {
             <span className="el tTag" style={{ '--x': '229', '--y': '6459', '--w': '200', color: '#fff' }}>SUPPLY</span>
             <h3 className="el tCardT" style={{ '--x': '215', '--y': '6645', '--w': '643', color: '#fff' }}>Supply Through Local Production and Global Sourcing</h3>
             <p className="el tCardB" style={{ '--x': '215', '--y': '6900', '--w': '669', color: '#fff' }}>Our model allows us to support customers throughout the year by combining UAE-grown produce with carefully sourced products from international markets.</p>
-            <img className="el box bento-photo" src="/assets/about/val-truck.jpg" alt="A worker loading boxes of produce onto a truck" style={{ '--x': '967', '--y': '6387', '--w': '805', '--h': '704' }} />
+            <img loading="lazy" decoding="async" className="el box bento-photo" src="/assets/about/val-truck.jpg" alt="A worker loading boxes of produce onto a truck" style={{ '--x': '967', '--y': '6387', '--w': '805', '--h': '704' }} />
             </div>
       
             
             <div className="m-val m-val-cream">
-            <img className="el box bento-photo" src="/assets/about/val-shop.jpg" alt="A grocer arranging produce inside a shop" style={{ '--x': '147', '--y': '7106', '--w': '805', '--h': '704' }} />
+            <img loading="lazy" decoding="async" className="el box bento-photo" src="/assets/about/val-shop.jpg" alt="A grocer arranging produce inside a shop" style={{ '--x': '147', '--y': '7106', '--w': '805', '--h': '704' }} />
             <div className="el box bento-card" style={{ '--x': '967', '--y': '7106', '--w': '805', '--h': '704', background: '#fff6a7' }}></div>
             <span className="el box tag" style={{ '--x': '1035', '--y': '7173', '--w': '135', '--h': '38' }}></span>
             <span className="el tTag" style={{ '--x': '1049', '--y': '7178', '--w': '200', color: '#fff6a7' }}>EXPERIENCE</span>
@@ -148,13 +148,13 @@ export default function AboutPage() {
             <span className="el tTag" style={{ '--x': '229', '--y': '7897', '--w': '200', color: '#a5d200' }}>PARTNERSHIP</span>
             <h3 className="el tCardT" style={{ '--x': '215', '--y': '8177', '--w': '669', color: '#000' }}>Built for Long-Term Partnerships</h3>
             <p className="el tCardB" style={{ '--x': '215', '--y': '8367', '--w': '669', color: '#000' }}>We value relationships over transactions. Our approach is grounded in reliability, transparency, and a commitment to growing with our customers.</p>
-            <img className="el box bento-photo" src="/assets/about/val-handshake.jpg" alt="Two people shaking hands in a farm field" style={{ '--x': '967', '--y': '7825', '--w': '805', '--h': '704' }} />
+            <img loading="lazy" decoding="async" className="el box bento-photo" src="/assets/about/val-handshake.jpg" alt="Two people shaking hands in a farm field" style={{ '--x': '967', '--y': '7825', '--w': '805', '--h': '704' }} />
             </div>
       
             
             <div className="fig-foot">
             <div className="el box foot-hand-card" style={{ '--x': '424', '--y': '8796', '--w': '474', '--h': '547' }}>
-              <img src="/assets/about/fig-footer-card.png" alt="The House of Organic — a hand holding an ivy leaf" />
+              <img loading="lazy" decoding="async" src="/assets/about/fig-footer-card.png" alt="The House of Organic — a hand holding an ivy leaf" />
             </div>
             <h2 className="el tCtaH" style={{ '--x': '1091', '--y': '8956', '--w': '404' }}>Want to know<br />more?</h2>
             <a className="el box btn-contact" href="/contact" style={{ '--x': '1199', '--y': '9125', '--w': '189', '--h': '56.096' }}>

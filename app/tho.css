@@ -1117,7 +1117,7 @@ body {
 .home-hero {
   aspect-ratio: 1920 / 979;
   overflow: hidden;
-  background: url("/assets/home-hero-bg.png") center / cover no-repeat;
+  background: url("/assets/home-hero-bg.jpg") center / cover no-repeat;
   animation: home-hero-fade-in 900ms ease-out 120ms both;
 }
 

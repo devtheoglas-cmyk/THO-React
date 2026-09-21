@@ -36,7 +36,7 @@ export default function HomePage() {
                   <svg className="tomato-swing-line" viewBox="0 0 680 460" aria-hidden="true">
                     <path className="tomato-line-orange-swing" d="M466 3C490 3 508 27 508 61V214" pathLength="1" />
                   </svg>
-                  <img className="tomato-body-image" src="/assets/tomato-body.png" alt="" />
+                  <img loading="lazy" decoding="async" className="tomato-body-image" src="/assets/tomato-body.png" alt="" />
                 </div>
               </div>
       
@@ -52,7 +52,7 @@ export default function HomePage() {
                 </a>
               </div>
       
-              <img
+              <img loading="lazy" decoding="async"
                 className="home-intro-farm"
                 src="/assets/home-intro-farm.jpg"
                 width="1920"
@@ -62,7 +62,7 @@ export default function HomePage() {
             </section>
       
             <section className="home-categories-section" aria-label="Product categories">
-              <img
+              <img loading="lazy" decoding="async"
                 className="home-category-strip"
                 src="/assets/home-category-strip.png?v=split-1"
                 width="1920"
@@ -77,7 +77,7 @@ export default function HomePage() {
       
               <article className="category-card category-card-fresh">
                 <div className="category-card-art-wrap" data-product-tilt>
-                  <img src="/assets/product-tilt-fresh.png" alt="" />
+                  <img loading="lazy" decoding="async" src="/assets/product-tilt-fresh.png" alt="" />
                 </div>
                 <div className="category-card-copy">
                   <h3><span>Fresh</span><span>Vegetables</span></h3>
@@ -94,7 +94,7 @@ export default function HomePage() {
       
               <article className="category-card category-card-fruits">
                 <div className="category-card-art-wrap" data-product-tilt>
-                  <img src="/assets/product-tilt-fruits.png" alt="" />
+                  <img loading="lazy" decoding="async" src="/assets/product-tilt-fruits.png" alt="" />
                 </div>
                 <div className="category-card-copy">
                   <h3><span>Seasonal</span><span>Fruits</span></h3>
@@ -124,49 +124,49 @@ export default function HomePage() {
               </h2>
               <a className="home-products-cta" href="/products">Explore Products</a>
               <a className="product-image-card pcard product-link-cucumber" style={{ '--bg': '#143f00', '--fg': '#fff' }} aria-label="View cucumber">
-                <img className="pc-fruit" src="/assets/products/cucumber-cut.png" alt="Cucumber" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/cucumber-cut.png" alt="Cucumber" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Cucumber</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
               <a className="product-image-card pcard product-link-broccoli" style={{ '--bg': '#2d5335', '--fg': '#fff' }} aria-label="View broccoli">
-                <img className="pc-fruit" src="/assets/products/broccoli-cut.png" alt="Broccoli" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/broccoli-cut.png" alt="Broccoli" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Broccoli</span>
                 <span className="pc-seasons"><i>Spring</i><i>Winter</i></span>
               </a>
               <a className="product-image-card pcard product-link-lemon" style={{ '--bg': '#c4e802', '--fg': '#0d2b00' }} aria-label="View lemon">
-                <img className="pc-fruit" src="/assets/products/citrus-cut.png" alt="Lemon" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/citrus-cut.png" alt="Lemon" />
                 <span className="pc-cat">Citrus</span>
                 <span className="pc-name">Lemon</span>
                 <span className="pc-seasons"><i>Summer</i><i>Winter</i></span>
               </a>
               <a className="product-image-card pcard product-link-tomato-cherry" style={{ '--bg': '#cd003c', '--fg': '#fff' }} aria-label="View tomato cherry red">
-                <img className="pc-fruit" src="/assets/products/tomato-cherry-red-cut.png" alt="Tomato Cherry Red" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/tomato-cherry-red-cut.png" alt="Tomato Cherry Red" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Tomato Cherry Red</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
               <a className="product-image-card pcard product-link-mangoes" style={{ '--bg': '#fb6b1e', '--fg': '#fff' }} aria-label="View mangoes">
-                <img className="pc-fruit" src="/assets/products/mangoes-cut.png" alt="Mangoes" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/mangoes-cut.png" alt="Mangoes" />
                 <span className="pc-cat">Seasonal Fruits</span>
                 <span className="pc-name">Mangoes</span>
                 <span className="pc-seasons"><i>Summer</i><i>Spring</i></span>
               </a>
               <a className="product-image-card pcard product-link-capsicum-red" style={{ '--bg': '#fb6b1e', '--fg': '#fff' }} aria-label="View capsicum red">
-                <img className="pc-fruit" src="/assets/products/capsicum-red-cut.png" alt="Capsicum Red" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/capsicum-red-cut.png" alt="Capsicum Red" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Capsicum Red</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
               <a className="product-image-card pcard product-link-capsicum-yellow" style={{ '--bg': '#c4e802', '--fg': '#0d2b00' }} aria-label="View capsicum yellow">
-                <img className="pc-fruit" src="/assets/products/capsicum-yellow-cut.png" alt="Capsicum Yellow" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/capsicum-yellow-cut.png" alt="Capsicum Yellow" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Capsicum Yellow</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
               </a>
               <a className="product-image-card pcard product-link-eggplants" style={{ '--bg': '#fff6a7', '--fg': '#0d2b00' }} aria-label="View Eggplant Long">
-                <img className="pc-fruit" src="/assets/products/eggplants-cut.png" alt="Eggplant Long" />
+                <img loading="lazy" decoding="async" className="pc-fruit" src="/assets/products/eggplants-cut.png" alt="Eggplant Long" />
                 <span className="pc-cat">Vegetable</span>
                 <span className="pc-name">Eggplant Long</span>
                 <span className="pc-seasons"><i>Winter</i><i>Spring</i></span>
@@ -174,10 +174,10 @@ export default function HomePage() {
             </section>
       
             <section className="home-static-section home-calendar-section" id="calendar" aria-label="Product calendar">
-              <img src="/assets/home-section-calendar.png?v=exact-1" width="1920" height="1800" alt="Product calendar overview" />
+              <img loading="lazy" decoding="async" src="/assets/home-section-calendar.png?v=exact-1" width="1920" height="1800" alt="Product calendar overview" />
               <div className="m-cal-promo">
                 <h2 className="m-cal-promo-h">Plan with Real-Time <span>Seasonal Availability</span></h2>
-                <img className="m-cal-promo-img" src="/assets/home-cal-illustration.png" alt="2026 seasonal product calendar" />
+                <img loading="lazy" decoding="async" className="m-cal-promo-img" src="/assets/home-cal-illustration.png" alt="2026 seasonal product calendar" />
                 <p className="m-cal-promo-p">Get a clear view of what&apos;s available across seasons and sourcing channels so you can plan better, reduce gaps and make faster supply decisions.</p>
               </div>
               <a className="section-hotspot calendar-section-link" href="/calendar" aria-label="Check product calendar">
@@ -309,7 +309,7 @@ export default function HomePage() {
       
             
             <section className="home-static-section home-brands-section" id="brands" aria-label="Trusted by growing brands" style={{ display: 'none' }}>
-              <img src="/assets/brands-bg.png" width="1920" height="852" alt="Trusted by growing brands" />
+              <img loading="lazy" decoding="async" src="/assets/brands-bg.png" width="1920" height="852" alt="Trusted by growing brands" />
               <div className="brands-curve" aria-hidden="true">
                 <span className="bc-logo" style={{ '--i': '0', backgroundImage: 'url(\'/assets/brands-logo-0.png\')' }}></span>
                 <span className="bc-logo" style={{ '--i': '1', backgroundImage: 'url(\'/assets/brands-logo-1.png\')' }}></span>
@@ -322,9 +322,9 @@ export default function HomePage() {
             </section>
       
             <section className="home-static-section home-footer-section" id="contact" aria-label="Footer">
-              <img src="/assets/home-section-footer.png?v=exact-1" width="1920" height="3219" alt="Grow a better future and contact information" />
+              <img loading="lazy" decoding="async" src="/assets/home-section-footer.png?v=exact-1" width="1920" height="3219" alt="Grow a better future and contact information" />
               <div className="footer-hand-zoom" aria-hidden="true">
-                <img src="/assets/footer-hand-card-clean.png?v=4" width="486" height="536" alt="" />
+                <img loading="lazy" decoding="async" src="/assets/footer-hand-card-clean.png?v=4" width="486" height="536" alt="" />
               </div>
               <a className="section-hotspot nav-pill mission-section-link" href="/about">Mission &amp; Team <span aria-hidden="true">→</span></a>
               <a className="section-hotspot nav-pill contact-section-link" href="/contact">Contact us <span aria-hidden="true">→</span></a>
@@ -333,7 +333,7 @@ export default function HomePage() {
               <div className="fig-stage home-grow-ov" aria-label="Grow a better future">
                 <p className="el wGrow" style={{ '--x': '717', '--y': '144', '--w': '443' }}>Grow a Better<br />Future</p>
                 <svg className="el wGrowHeart box heart-draw" data-heart-draw style={{ '--x': '485', '--y': '378', '--w': '948.702', '--h': '642' }} viewBox="0 0 948.702 642" fill="none" preserveAspectRatio="none" aria-hidden="true"><path className="heart-reveal-stroke" d="M477.076 1C539.617 1 588.628 24.2234 618.102 64.7539C647.585 105.298 657.64 163.33 641.901 233.173L643.786 233.809C668.097 180.698 714.935 141.515 770.916 138.2H770.966C849.025 136.802 901.1 164.799 927.431 211.72C953.591 258.338 954.493 323.901 929.775 398.527L929.187 400.292C875.355 560.6 684.624 641 489.374 641C294.144 641 95.1633 560.604 25.0098 400.21C-6.81111 327.443 -6.11775 261.245 21.8555 213.642C49.808 166.073 105.155 136.811 183.228 138.199C239.213 141.51 286.054 180.696 310.366 233.809L312.251 233.173C296.512 163.33 306.567 105.298 336.051 64.7539C365.524 24.2233 414.536 1.00005 477.076 1Z" stroke="#a5d200" strokeWidth="2.4" /></svg>
-                <div className="el box wTeam" style={{ '--x': '610', '--y': '333', '--w': '700', '--h': '700' }}><img src="/assets/whatwedo/team.jpg" alt="The House of Organic team" /></div>
+                <div className="el box wTeam" style={{ '--x': '610', '--y': '333', '--w': '700', '--h': '700' }}><img loading="lazy" decoding="async" src="/assets/whatwedo/team.jpg" alt="The House of Organic team" /></div>
                 <a className="el box wProcessPill" href="/what-we-do" style={{ '--x': '825', '--y': '857', '--w': '228', '--h': '65' }}><span className="wOurProcess">Our Process <span className="wop-arrow" aria-hidden="true">→</span></span></a>
               </div>
               
